@@ -11,10 +11,11 @@ python = "^3.12"
 pandas = "^2.2.2"
 requests = "^2.32.2"
 oauth2 = "^1.9.0.post1"
+openpyxl = "^3.1.2"
+setuptools = "^70.0.0"
 
 
 [tool.poetry.group.dev.dependencies]
-setuptools = "^70.0.0"
 wheel = "^0.43.0"
 twine = "^5.1.0"
 
