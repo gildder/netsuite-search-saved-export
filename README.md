@@ -11,7 +11,7 @@ pip install ns_search_saved_export
 ## Usage
 
 ```python
-from ns_search_saved_export import NsSearchSavedExport
+from ns_search_saved_export.ns_search_saved_export import NsSearchSavedExport
 
 # Initialize the API
 api = NsSearchSavedExport(

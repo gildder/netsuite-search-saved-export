@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='ns_search_saved_export',
-    version='0.1.1',
+    version='0.1.3',
     description='A library for interacting with NetSuite API and exporting data',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
