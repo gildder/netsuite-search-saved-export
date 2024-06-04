@@ -25,7 +25,9 @@ api = NsSearchSavedExport(
 
 # Send request
 payload = {
-    "search_id": "1234"  # Replace with your saved search ID
+    "searchID": "customsearch_test",  # Replace with your saved search ID
+    "pageIndex": 0,
+    "pageRange": 1000 
 }
 response = api.send_request(payload)
 
