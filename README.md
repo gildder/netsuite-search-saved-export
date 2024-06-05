@@ -103,7 +103,7 @@ while True:
         results = {'results': data_result}
 
         # Optional: save the data to a file
-        with open(os.path.join(api.path_part, 'conslidado.json'), 'w', encoding='utf-8') as json_file:
+        with open(os.path.join(api.path, 'conslidado.json'), 'w', encoding='utf-8') as json_file:
             json.dump(results, json_file, ensure_ascii=False, indent=4)
 
         # Extract data
