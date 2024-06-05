@@ -3,6 +3,7 @@ import hmac
 import binascii
 from hashlib import sha256
 
+#region SignatureMethod_HMAC_SHA256
 class SignatureMethod_HMAC_SHA256(oauth.SignatureMethod):
     name = 'HMAC-SHA256'
 
@@ -27,3 +28,5 @@ class SignatureMethod_HMAC_SHA256(oauth.SignatureMethod):
         key, raw = self.signing_base(request, consumer, token)
         hashed = hmac.new(key, raw, sha256)
         return binascii.b2a_base64(hashed.digest())[:-1]
+    
+#endregion
