@@ -32,7 +32,9 @@ api = NsSearchSavedExport(
 
 # Send request
 payload = {
-    'searchID': search_saved_id, # Replace with your saved search ID
+    "searchID": "customsearch_test",  # Replace with your saved search ID
+    "pageIndex": 0,
+    "pageRange": 1000 
 }
 
 # Obtain the data
@@ -176,4 +178,3 @@ api.save_to_csv(data, 'data.csv')
 api.save_to_txt(data, 'data.txt')
 
 ```
-
